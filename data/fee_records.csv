@@ -1,0 +1,22 @@
+id,scheme,country,fee_name,amount,currency,previous_amount
+101,Visa,South Africa,International Acquiring Fee,12500,USD,9000
+102,Visa,Nigeria,Cross-Border Processing Fee,9800,USD,10200
+103,Mastercard,United Arab Emirates,Network Assessment Fee,10050,USD,9800
+104,Mastercard,United Kingdom,Acquirer Processing Fee,9995,USD,8500
+105,Visa,Germany,Scheme Processing Fee,2500,EUR,2400
+106,Mastercard,South Africa,Cross-Border Assessment,15000,USD,11000
+107,Visa,United Arab Emirates,Digital Enablement Fee,7800,USD,0
+108,Mastercard,Nigeria,Unscheduled Data Quality Adjustment,17500,USD,
+109,Visa,United Kingdom,Authorisation Processing Fee,4300,EUR,4700
+110,Mastercard,Germany,Clearing Connectivity Fee,10000,EUR,10000
+111,Visa,Kenya,International Service Fee,10001,USD,7500
+112,Mastercard,Kenya,Acquirer Processing Fee,9999,USD,12000
+113,Visa,South Africa,International Acquiring Fee,12450,USD,9100
+114,Mastercard,France,Fraud Monitoring Assessment,6200,EUR,5800
+115,Visa,Nigeria,Network Assessment Fee,22000,USD,18000
+116,Mastercard,United Arab Emirates,Cross-Border Processing Fee,3500,USD,3300
+117,Visa,United Kingdom,Compliance Case Fee,51000,EUR,52000
+118,Mastercard,Germany,Scheme Processing Fee,10050,EUR,9900
+119,Visa,France,Token Assurance Fee,9950,USD,8100
+120,Mastercard,South Africa,Acquirer Processing Fee,10000,USD,8000
+

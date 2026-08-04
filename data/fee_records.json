@@ -1,0 +1,23 @@
+[
+  {"id": 101, "scheme": "Visa", "country": "South Africa", "fee_name": "International Acquiring Fee", "amount": 12500, "currency": "USD", "previous_amount": 9000},
+  {"id": 102, "scheme": "Visa", "country": "Nigeria", "fee_name": "Cross-Border Processing Fee", "amount": 9800, "currency": "USD", "previous_amount": 10200},
+  {"id": 103, "scheme": "Mastercard", "country": "United Arab Emirates", "fee_name": "Network Assessment Fee", "amount": 10050, "currency": "USD", "previous_amount": 9800},
+  {"id": 104, "scheme": "Mastercard", "country": "United Kingdom", "fee_name": "Acquirer Processing Fee", "amount": 9995, "currency": "USD", "previous_amount": 8500},
+  {"id": 105, "scheme": "Visa", "country": "Germany", "fee_name": "Scheme Processing Fee", "amount": 2500, "currency": "EUR", "previous_amount": 2400},
+  {"id": 106, "scheme": "Mastercard", "country": "South Africa", "fee_name": "Cross-Border Assessment", "amount": 15000, "currency": "USD", "previous_amount": 11000},
+  {"id": 107, "scheme": "Visa", "country": "United Arab Emirates", "fee_name": "Digital Enablement Fee", "amount": 7800, "currency": "USD", "previous_amount": 0},
+  {"id": 108, "scheme": "Mastercard", "country": "Nigeria", "fee_name": "Unscheduled Data Quality Adjustment", "amount": 17500, "currency": "USD", "previous_amount": null},
+  {"id": 109, "scheme": "Visa", "country": "United Kingdom", "fee_name": "Authorisation Processing Fee", "amount": 4300, "currency": "EUR", "previous_amount": 4700},
+  {"id": 110, "scheme": "Mastercard", "country": "Germany", "fee_name": "Clearing Connectivity Fee", "amount": 10000, "currency": "EUR", "previous_amount": 10000},
+  {"id": 111, "scheme": "Visa", "country": "Kenya", "fee_name": "International Service Fee", "amount": 10001, "currency": "USD", "previous_amount": 7500},
+  {"id": 112, "scheme": "Mastercard", "country": "Kenya", "fee_name": "Acquirer Processing Fee", "amount": 9999, "currency": "USD", "previous_amount": 12000},
+  {"id": 113, "scheme": "Visa", "country": "South Africa", "fee_name": "International Acquiring Fee", "amount": 12450, "currency": "USD", "previous_amount": 9100},
+  {"id": 114, "scheme": "Mastercard", "country": "France", "fee_name": "Fraud Monitoring Assessment", "amount": 6200, "currency": "EUR", "previous_amount": 5800},
+  {"id": 115, "scheme": "Visa", "country": "Nigeria", "fee_name": "Network Assessment Fee", "amount": 22000, "currency": "USD", "previous_amount": 18000},
+  {"id": 116, "scheme": "Mastercard", "country": "United Arab Emirates", "fee_name": "Cross-Border Processing Fee", "amount": 3500, "currency": "USD", "previous_amount": 3300},
+  {"id": 117, "scheme": "Visa", "country": "United Kingdom", "fee_name": "Compliance Case Fee", "amount": 51000, "currency": "EUR", "previous_amount": 52000},
+  {"id": 118, "scheme": "Mastercard", "country": "Germany", "fee_name": "Scheme Processing Fee", "amount": 10050, "currency": "EUR", "previous_amount": 9900},
+  {"id": 119, "scheme": "Visa", "country": "France", "fee_name": "Token Assurance Fee", "amount": 9950, "currency": "USD", "previous_amount": 8100},
+  {"id": 120, "scheme": "Mastercard", "country": "South Africa", "fee_name": "Acquirer Processing Fee", "amount": 10000, "currency": "USD", "previous_amount": 8000}
+]
+

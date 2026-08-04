@@ -16,6 +16,51 @@ You will have about 35 minutes of active implementation within a one-hour interv
 
 You may change the starter structure when you can explain why. Prefer small, understandable changes and preserve an operational application.
 
+## Fork, branch, and submit your work
+
+You have read access to the public starter repository but cannot push branches directly to the Pay-IP repository. Before you begin implementation, create a fork under your own GitHub account and work in a dedicated branch on that fork.
+
+1. Sign in to GitHub and open <https://github.com/Pay-IP/fee-review-assistant-candidate>.
+2. Select **Fork**, choose your personal GitHub account as the owner, and create the fork.
+3. Clone your fork, replacing `<your-github-username>` below:
+
+   ```bash
+   git clone https://github.com/<your-github-username>/fee-review-assistant-candidate.git
+   cd fee-review-assistant-candidate
+   git switch development
+   git pull --ff-only
+   git switch -c interview/<your-name>
+   ```
+
+4. Confirm that `origin` points to your fork:
+
+   ```bash
+   git remote -v
+   ```
+
+5. Implement and test your solution. Commit your work before the interview ends:
+
+   ```bash
+   git status
+   git add <files-you-intend-to-submit>
+   git commit -m "Implement fee review flow"
+   git push -u origin interview/<your-name>
+   ```
+
+6. Share the URL of your fork and branch with the interviewer. If requested, open a pull request from your branch to `Pay-IP/fee-review-assistant-candidate:development`; do not merge it yourself.
+
+If you already cloned the Pay-IP repository before creating your fork, keep that checkout and change its remotes after the fork exists:
+
+```bash
+git remote rename origin upstream
+git remote add origin https://github.com/<your-github-username>/fee-review-assistant-candidate.git
+git fetch origin
+git switch development
+git switch -c interview/<your-name>
+```
+
+Your GitHub fork and pushed interview branch will be public because the starter repository is public. Do not commit credentials, personal information, real company/client data, local environment files, or unrelated work.
+
 ## Technology choice
 
 The supplied default is Python 3.12 with FastAPI for the backend and JavaScript with React and Vite for the frontend. You may replace the backend, the frontend, or both with languages and frameworks that better represent how you normally work. You will not be penalised for using an alternative stack.

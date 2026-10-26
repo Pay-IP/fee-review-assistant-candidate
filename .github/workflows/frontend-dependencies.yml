@@ -1,0 +1,46 @@
+name: Frontend dependency qualification
+
+on:
+  pull_request:
+    branches: [development]
+    paths:
+      - "frontend/**"
+      - ".github/workflows/frontend-dependencies.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Build the frontend image from its pinned base
+        run: docker build --pull --no-cache --file frontend/Dockerfile --tag fee-review-frontend:qualification .
+      - name: Verify the image runtime, dependency tree, audit, tests and build
+        run: |
+          docker image inspect fee-review-frontend:qualification --format '{{.Id}}'
+          docker run --rm --interactive --entrypoint sh fee-review-frontend:qualification -eu <<'SH'
+          node -e 'if (process.version !== "v22.23.4") throw new Error(`Unexpected Node ${process.version}`); console.log(JSON.stringify(process.versions))'
+          npm --version
+          npm ls --all
+          npm audit
+          npm test -- --run
+          npm run build
+          SH
+      - name: Smoke test the frontend server
+        run: |
+          docker run --detach --name frontend-smoke --publish 127.0.0.1:5173:5173 fee-review-frontend:qualification
+          trap 'docker logs frontend-smoke; docker rm --force frontend-smoke' EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent --show-error http://127.0.0.1:5173/ > /tmp/frontend.html; then
+              grep -q '<div id="root"></div>' /tmp/frontend.html
+              exit 0
+            fi
+            sleep 1
+          done
+          exit 1
